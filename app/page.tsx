@@ -52,9 +52,9 @@ export default function Home() {
           className="font-sans text-[32px] text-white max-w-[700px] font-light"
           style={{ lineHeight: "1.4em" }}
         >
-          Whether you&apos;re a founder looking for a partner in design and
-          product strategy, or an established company working on new features,
-          we can help.
+          I partner with companies to figure out what to build, how it should
+          work and look, and turn ideas into well-designed, scalable digital
+          products using design, technology, and AI.
         </p>
       </section>
 

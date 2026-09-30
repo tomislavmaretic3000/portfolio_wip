@@ -26,9 +26,9 @@ export default function Home() {
   return (
     <main>
       {/* 1. Logo ─────────────────────────────────────────────────── */}
-      <section className="bg-[#131415] px-[50px] pt-[100px] pb-[50px]">
+      <section className="bg-[#131415] px-[50px] pt-[50px] md:pt-[100px] pb-[50px]">
         <div className="flex flex-col gap-[5px]">
-          <div className="w-[235px] h-[68px] relative">
+          <div className="w-[118px] h-[34px] md:w-[235px] md:h-[68px] relative">
             <Image
               src="/assets/SZNhRjkZ1taYTDTSeRL6ldcAMY.svg"
               alt="Studio logo"

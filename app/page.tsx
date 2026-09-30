@@ -49,7 +49,7 @@ export default function Home() {
       {/* 2. Intro ────────────────────────────────────────────────── */}
       <section className="bg-[#131415] px-[50px] pb-[100px]">
         <p
-          className="font-sans text-[48px] text-white max-w-[1008px] font-light"
+          className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"
           style={{ lineHeight: "1.19em" }}
         >
           I partner with companies to turn ideas into well-designed, scalable

@@ -49,7 +49,7 @@ export default function Home() {
       {/* 2. Intro ────────────────────────────────────────────────── */}
       <section className="bg-[#131415] px-[50px] pb-[100px]">
         <p
-          className="font-sans text-[32px] text-white max-w-[700px]"
+          className="font-sans text-[32px] text-white max-w-[700px] font-light"
           style={{ lineHeight: "1.4em" }}
         >
           Whether you&apos;re a founder looking for a partner in design and

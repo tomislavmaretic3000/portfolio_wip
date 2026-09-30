@@ -9,7 +9,7 @@ type GalleryImage = {
   naturalHeight: number;
 };
 
-const DISPLAY_HEIGHT = 410;
+const DISPLAY_HEIGHT = 533; // 410 * 1.3
 const SCROLL_SPEED = 1.5; // px per frame (~90px/s at 60fps)
 
 export default function Gallery({ images }: { images: GalleryImage[] }) {

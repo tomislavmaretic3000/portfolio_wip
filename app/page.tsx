@@ -25,10 +25,9 @@ const capabilities = [
 export default function Home() {
   return (
     <main>
-      {/* ─── Hero ──────────────────────────────────────────────────── */}
+      {/* 1. Logo ─────────────────────────────────────────────────── */}
       <section className="bg-[#131415] px-[50px] pt-[100px] pb-[50px]">
-        {/* Sticky logo + label */}
-        <div className="sticky top-0 z-10 flex flex-col gap-[5px] pb-4 bg-[#131415]">
+        <div className="flex flex-col gap-[5px]">
           <div className="w-[181px] h-[52px] relative">
             <Image
               src="/assets/SZNhRjkZ1taYTDTSeRL6ldcAMY.svg"
@@ -45,51 +44,50 @@ export default function Home() {
             PRODUCT DESIGN &amp; BRANDING
           </span>
         </div>
+      </section>
 
-        {/* Main content */}
-        <div className="flex flex-col gap-[100px] mt-[50px]">
-          {/* Hero body text */}
-          <p
-            className="font-sans text-[32px] text-white max-w-[700px]"
-            style={{ lineHeight: "1.4em" }}
-          >
-            Whether you&apos;re a founder looking for a partner in design and
-            product strategy, or an established company working on new features,
-            we can help.
-          </p>
+      {/* 2. Intro ────────────────────────────────────────────────── */}
+      <section className="bg-[#131415] px-[50px] pb-[100px]">
+        <p
+          className="font-sans text-[32px] text-white max-w-[700px]"
+          style={{ lineHeight: "1.4em" }}
+        >
+          Whether you&apos;re a founder looking for a partner in design and
+          product strategy, or an established company working on new features,
+          we can help.
+        </p>
+      </section>
 
-          {/* Capabilities */}
-          <div className="flex flex-col gap-0">
-            <span
-              className="font-mono text-[12px] tracking-[0.08em] text-white/50 mb-[20px]"
-              style={{ lineHeight: "1.4em" }}
+      {/* 3. Image carousel ───────────────────────────────────────── */}
+      <Gallery images={galleryImages} />
+
+      {/* 4. Capabilities ─────────────────────────────────────────── */}
+      <section className="bg-[#131415] px-[50px] py-[100px]">
+        <span
+          className="font-mono text-[12px] tracking-[0.08em] text-white/50 mb-[20px] block"
+          style={{ lineHeight: "1.4em" }}
+        >
+          CAPABILITIES
+        </span>
+        <div className="flex flex-col max-w-[700px]">
+          {capabilities.map((item) => (
+            <div
+              key={item}
+              className="flex items-center gap-[10px] py-[20px]"
+              style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}
             >
-              CAPABILITIES
-            </span>
-            <div className="flex flex-col max-w-[700px]">
-              {capabilities.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-[10px] py-[20px]"
-                  style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}
-                >
-                  <span
-                    className="font-sans text-[18px] text-white"
-                    style={{ lineHeight: "1.2em" }}
-                  >
-                    {item}
-                  </span>
-                </div>
-              ))}
+              <span
+                className="font-sans text-[18px] text-white"
+                style={{ lineHeight: "1.2em" }}
+              >
+                {item}
+              </span>
             </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* ─── Gallery ───────────────────────────────────────────────── */}
-      <Gallery images={galleryImages} />
-
-      {/* ─── Partners ──────────────────────────────────────────────── */}
+      {/* 5. Clients ──────────────────────────────────────────────── */}
       <section className="py-[50px]">
         <span
           className="font-mono text-[12px] tracking-[0.08em] text-white/50 px-[50px] mb-[30px] block"

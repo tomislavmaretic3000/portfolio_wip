@@ -9,7 +9,6 @@ type GalleryImage = {
   naturalHeight: number;
 };
 
-const DISPLAY_HEIGHT = 533; // 410 * 1.3
 const SCROLL_SPEED = 1.5; // px per frame (~90px/s at 60fps)
 
 export default function Gallery({ images }: { images: GalleryImage[] }) {
@@ -18,7 +17,7 @@ export default function Gallery({ images }: { images: GalleryImage[] }) {
   const isDragging = useRef(false);
   const startX = useRef(0);
   const startScrollLeft = useRef(0);
-  const animRef = useRef<number>();
+  const animRef = useRef<number>(undefined);
 
   // Autoplay: scroll right continuously, loop seamlessly
   const tick = useCallback(() => {
@@ -82,12 +81,7 @@ export default function Gallery({ images }: { images: GalleryImage[] }) {
               alt={i < images.length ? `Project ${i + 1}` : ""}
               width={img.naturalWidth}
               height={img.naturalHeight}
-              style={{
-                height: DISPLAY_HEIGHT,
-                width: "auto",
-                display: "block",
-                borderRadius: 12,
-              }}
+              className="h-[373px] md:h-[533px] w-auto block rounded-[12px]"
               unoptimized={img.src.endsWith(".gif")}
               draggable={false}
               aria-hidden={i >= images.length}

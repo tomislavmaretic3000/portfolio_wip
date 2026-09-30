@@ -28,7 +28,7 @@ export default function Home() {
       {/* 1. Logo ─────────────────────────────────────────────────── */}
       <section className="bg-[#131415] px-[50px] pt-[100px] pb-[50px]">
         <div className="flex flex-col gap-[5px]">
-          <div className="w-[181px] h-[52px] relative">
+          <div className="w-[235px] h-[68px] relative">
             <Image
               src="/assets/SZNhRjkZ1taYTDTSeRL6ldcAMY.svg"
               alt="Studio logo"
@@ -49,12 +49,11 @@ export default function Home() {
       {/* 2. Intro ────────────────────────────────────────────────── */}
       <section className="bg-[#131415] px-[50px] pb-[100px]">
         <p
-          className="font-sans text-[32px] text-white max-w-[700px]"
-          style={{ lineHeight: "1.4em" }}
+          className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"
+          style={{ lineHeight: "1.19em" }}
         >
-          Whether you&apos;re a founder looking for a partner in design and
-          product strategy, or an established company working on new features,
-          we can help.
+          I partner with companies to turn ideas into well-designed, scalable
+          digital products using design, technology, and AI.
         </p>
       </section>
 

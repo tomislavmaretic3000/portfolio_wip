@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main>
       {/* 1. Logo ─────────────────────────────────────────────────── */}
-      <section className="bg-[#131415] px-[50px] pt-[50px] md:pt-[100px] pb-[50px]">
+      <section className="bg-[#131415] px-[25px] md:px-[50px] pt-[50px] md:pt-[100px] pb-[50px]">
         <div className="flex flex-col gap-[5px]">
           <div className="w-[118px] h-[34px] md:w-[235px] md:h-[68px] relative">
             <Image
@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* 2. Intro ────────────────────────────────────────────────── */}
-      <section className="bg-[#131415] px-[50px] pb-[100px]">
+      <section className="bg-[#131415] px-[25px] md:px-[50px] pb-[100px]">
         <p
           className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"
           style={{ lineHeight: "1.19em" }}
@@ -61,7 +61,7 @@ export default function Home() {
       <Gallery images={galleryImages} />
 
       {/* 4. Capabilities ─────────────────────────────────────────── */}
-      <section className="bg-[#131415] px-[50px] py-[100px]">
+      <section className="bg-[#131415] px-[25px] md:px-[50px] py-[100px]">
         <span
           className="font-mono text-[12px] tracking-[0.08em] text-white/50 mb-[20px] block"
           style={{ lineHeight: "1.4em" }}
@@ -89,7 +89,7 @@ export default function Home() {
       {/* 5. Clients ──────────────────────────────────────────────── */}
       <section className="py-[50px]">
         <span
-          className="font-mono text-[12px] tracking-[0.08em] text-white/50 px-[50px] mb-[30px] block"
+          className="font-mono text-[12px] tracking-[0.08em] text-white/50 px-[25px] md:px-[50px] mb-[30px] block"
           style={{ lineHeight: "1.4em" }}
         >
           WE PARTNER WITH INDUSTRY LEADERS

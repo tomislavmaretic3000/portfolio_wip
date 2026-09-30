@@ -68,7 +68,7 @@ export default function Gallery({ images }: { images: GalleryImage[] }) {
     <section className="py-[50px] bg-[#131415]">
       <div
         ref={scrollRef}
-        className="flex gap-[10px] overflow-x-auto scrollbar-hide px-[50px] cursor-grab active:cursor-grabbing select-none"
+        className="flex gap-[10px] overflow-x-auto scrollbar-hide px-[25px] md:px-[50px] cursor-grab active:cursor-grabbing select-none"
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}

@@ -52,9 +52,8 @@ export default function Home() {
           className="font-sans text-[32px] text-white max-w-[840px] font-light"
           style={{ lineHeight: "1.19em" }}
         >
-          I partner with companies to figure out what to build, how it should
-          work and look, and turn ideas into well-designed, scalable digital
-          products using design, technology, and AI.
+          I partner with companies to turn ideas into well-designed, scalable
+          digital products using design, technology, and AI.
         </p>
       </section>
 

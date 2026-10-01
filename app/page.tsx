@@ -50,7 +50,7 @@ export default function Home() {
       </FadeUp>
 
       {/* 2. Intro */}
-      <FadeUp delay={80}>
+      <FadeUp delay={150}>
         <section className="bg-[#131415] px-[25px] md:px-[50px] pb-[100px]">
           <p
             className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"
@@ -63,12 +63,12 @@ export default function Home() {
       </FadeUp>
 
       {/* 3. Image carousel */}
-      <FadeUp delay={160}>
+      <FadeUp delay={300}>
         <Gallery images={galleryImages} />
       </FadeUp>
 
       {/* 4. Capabilities */}
-      <FadeUp delay={240}>
+      <FadeUp delay={450}>
         <section className="bg-[#131415] px-[25px] md:px-[50px] py-[100px]">
           <span
             className="font-mono text-[12px] tracking-[0.08em] text-white/50 mb-[20px] block"
@@ -96,7 +96,7 @@ export default function Home() {
       </FadeUp>
 
       {/* 5. Clients */}
-      <FadeUp delay={320}>
+      <FadeUp delay={600}>
         <section className="py-[50px]">
           <span
             className="font-mono text-[12px] tracking-[0.08em] text-white/50 px-[25px] md:px-[50px] mb-[30px] block"

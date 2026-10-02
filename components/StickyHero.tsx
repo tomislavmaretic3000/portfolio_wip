@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 
 export default function StickyHero() {
   const ref = useRef<HTMLElement>(null);
@@ -23,28 +22,8 @@ export default function StickyHero() {
   return (
     <section
       ref={ref}
-      className="sticky top-0 z-0 bg-[#131415] px-[25px] md:px-[50px] pt-[50px] md:pt-[100px] pb-[60px] flex flex-col gap-[40px] md:gap-[60px]"
+      className="sticky top-0 z-0 bg-[#131415] px-[25px] md:px-[50px] pt-[120px] md:pt-[160px] pb-[60px] flex flex-col"
     >
-      {/* Logo — top */}
-      <div className="flex flex-col gap-[5px]">
-        <div className="w-[142px] h-[41px] md:w-[235px] md:h-[68px] relative">
-          <Image
-            src="/assets/SZNhRjkZ1taYTDTSeRL6ldcAMY.svg"
-            alt="Studio logo"
-            fill
-            className="object-contain object-left invert"
-            priority
-          />
-        </div>
-        <span
-          className="font-mono text-[12px] tracking-[0.08em] text-white/50"
-          style={{ lineHeight: "1.4em" }}
-        >
-          PRODUCT DESIGN &amp; BRANDING
-        </span>
-      </div>
-
-      {/* Intro — bottom */}
       <p
         className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"
         style={{ lineHeight: "1.19em" }}

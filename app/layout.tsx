@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, Fragment_Mono } from "next/font/google";
 import { Agentation } from "agentation";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${archivo.variable} ${fragmentMono.variable}`}
     >
       <body>
+        <SmoothScroll />
         {children}
         {process.env.NODE_ENV === "development" && <Agentation />}
       </body>

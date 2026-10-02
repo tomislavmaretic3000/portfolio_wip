@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
 import FadeUp from "@/components/FadeUp";
+import StickyHero from "@/components/StickyHero";
 
 const galleryImages = [
   { src: "/assets/pcM67Y0M0FscNIgmr72HCZP4iXU.jpg", naturalWidth: 650, naturalHeight: 499 },
@@ -26,49 +27,13 @@ const capabilities = [
 export default function Home() {
   return (
     <main>
-      {/* ─── Sticky hero: Logo + Intro ─────────────────────────────── */}
-      <section className="sticky top-0 z-0 h-screen bg-[#131415] px-[25px] md:px-[50px] pt-[50px] md:pt-[100px] flex flex-col hero-entrance">
-        {/* Logo */}
-        <div className="flex flex-col gap-[5px] mb-[60px]">
-          <div className="w-[142px] h-[41px] md:w-[235px] md:h-[68px] relative">
-            <Image
-              src="/assets/SZNhRjkZ1taYTDTSeRL6ldcAMY.svg"
-              alt="Studio logo"
-              fill
-              className="object-contain object-left invert"
-              priority
-            />
-          </div>
-          <span
-            className="font-mono text-[12px] tracking-[0.08em] text-white/50"
-            style={{ lineHeight: "1.4em" }}
-          >
-            PRODUCT DESIGN &amp; BRANDING
-          </span>
-        </div>
+      {/* Sticky hero — fades out on scroll, gallery slides over it */}
+      <StickyHero />
 
-        {/* Intro */}
-        <p
-          className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"
-          style={{ lineHeight: "1.19em" }}
-        >
-          I partner with companies to turn ideas into well-designed, scalable
-          digital products using design, technology, and AI.
-        </p>
-
-        {/* Fade gradient — hero content dissolves as gallery scrolls over */}
-        <div
-          className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none"
-          style={{ background: "linear-gradient(to top, #131415 0%, transparent 100%)" }}
-        />
-      </section>
-
-      {/* ─── Scrolling content sits above the sticky hero ──────────── */}
-      <div className="relative z-10">
-        {/* Gallery */}
+      {/* Scrolling content — sits on top of sticky hero */}
+      <div className="relative z-10 -mt-[15vh]">
         <Gallery images={galleryImages} />
 
-        {/* Capabilities */}
         <FadeUp delay={0}>
           <section className="bg-[#131415] px-[25px] md:px-[50px] py-[100px]">
             <span
@@ -96,7 +61,6 @@ export default function Home() {
           </section>
         </FadeUp>
 
-        {/* Clients */}
         <FadeUp delay={150}>
           <section className="py-[50px] bg-[#131415]">
             <span

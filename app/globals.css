@@ -29,6 +29,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Hero entrance animation */
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-entrance {
+  animation: hero-in 0.8s ease forwards;
+}
+
 /* Fade-up entrance animation */
 .fade-up {
   opacity: 0;

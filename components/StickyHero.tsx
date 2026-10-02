@@ -53,11 +53,7 @@ export default function StickyHero() {
         digital products using design, technology, and AI.
       </p>
 
-      {/* Fade gradient at bottom — blends into gallery sliding over */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none"
-        style={{ background: "linear-gradient(to top, #131415 20%, transparent 100%)" }}
-      />
+
     </section>
   );
 }

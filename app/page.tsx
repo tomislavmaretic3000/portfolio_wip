@@ -31,7 +31,7 @@ export default function Home() {
       <StickyHero />
 
       {/* Scrolling content — sits on top of sticky hero */}
-      <div className="relative z-10 -mt-[15vh]">
+      <div className="relative z-10">
         <Gallery images={galleryImages} />
 
         <FadeUp delay={0}>

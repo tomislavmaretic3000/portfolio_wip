@@ -6,7 +6,10 @@ export default function StickyNav() {
       className="fixed top-0 left-0 z-50 px-[25px] md:px-[50px] pt-[30px] md:pt-[40px] flex flex-col gap-[5px] pointer-events-none"
       style={{ mixBlendMode: "difference" }}
     >
-      <div className="w-[142px] h-[41px] md:w-[235px] md:h-[68px] relative">
+      <div
+        className="w-[142px] h-[41px] md:w-[235px] md:h-[68px] relative slide-up"
+        style={{ animationDelay: "0ms" }}
+      >
         <Image
           src="/assets/SZNhRjkZ1taYTDTSeRL6ldcAMY.svg"
           alt="Studio logo"
@@ -16,8 +19,8 @@ export default function StickyNav() {
         />
       </div>
       <span
-        className="font-mono text-[12px] tracking-[0.08em] text-white"
-        style={{ lineHeight: "1.4em" }}
+        className="font-mono text-[12px] tracking-[0.08em] text-white slide-up"
+        style={{ lineHeight: "1.4em", animationDelay: "80ms" }}
       >
         PRODUCT DESIGN &amp; BRANDING
       </span>

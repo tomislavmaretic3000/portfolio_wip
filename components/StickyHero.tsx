@@ -22,7 +22,7 @@ export default function StickyHero() {
   return (
     <section
       ref={ref}
-      className="sticky top-0 z-0 bg-[#131415] px-[25px] md:px-[50px] pt-[120px] md:pt-[160px] pb-[60px] flex flex-col"
+      className="sticky top-0 z-0 bg-[#131415] px-[25px] md:px-[50px] pt-[144px] md:pt-[192px] pb-[72px] flex flex-col"
     >
       <p
         className="font-sans text-[24px] md:text-[36px] lg:text-[48px] text-white max-w-[1008px] font-light"

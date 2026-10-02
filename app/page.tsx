@@ -16,6 +16,10 @@ const galleryImages = [
   { src: "/assets/o8BwMlTbYxpa9ZG5OGPCIoCezkg.jpg",  naturalWidth: 507, naturalHeight: 410 },
   { src: "/assets/qWQFgDjuoE5WPhtIMRt6kSNavM.jpg",   naturalWidth: 563, naturalHeight: 410 },
   { src: "/assets/uURvuooMgmvyx1QEE91fbbaZcMs.gif",  naturalWidth: 570, naturalHeight: 424 },
+  { src: "/assets/Derma4.jpg",  naturalWidth: 722, naturalHeight: 722 },
+  { src: "/assets/RIS1.jpg",    naturalWidth: 722, naturalHeight: 722 },
+  { src: "/assets/Tax2.jpg",    naturalWidth: 722, naturalHeight: 722 },
+  { src: "/assets/taxtote.png", naturalWidth: 717, naturalHeight: 717 },
 ];
 
 const capabilities = [

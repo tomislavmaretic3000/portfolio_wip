@@ -23,7 +23,7 @@ export default function StickyHero() {
   return (
     <section
       ref={ref}
-      className="sticky top-0 z-0 h-[85vh] bg-[#131415] px-[25px] md:px-[50px] pt-[50px] md:pt-[100px] pb-[60px] flex flex-col justify-between"
+      className="sticky top-0 z-0 h-[85vh] bg-[#131415] px-[25px] md:px-[50px] pt-[50px] md:pt-[100px] pb-[60px] flex flex-col gap-[40px] md:gap-[60px]"
     >
       {/* Logo — top */}
       <div className="flex flex-col gap-[5px]">

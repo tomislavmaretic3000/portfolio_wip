@@ -9,7 +9,8 @@ type GalleryImage = {
   naturalHeight: number;
 };
 
-const SCROLL_SPEED = 1.5; // px per frame (~90px/s at 60fps)
+const SCROLL_SPEED_MOBILE = 1.95; // 1.5 * 1.3
+const SCROLL_SPEED_DESKTOP = 1.5;
 
 export default function Gallery({ images }: { images: GalleryImage[] }) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -23,7 +24,8 @@ export default function Gallery({ images }: { images: GalleryImage[] }) {
   const tick = useCallback(() => {
     const el = scrollRef.current;
     if (el && !isPaused.current) {
-      el.scrollLeft += SCROLL_SPEED;
+      const speed = window.innerWidth < 768 ? SCROLL_SPEED_MOBILE : SCROLL_SPEED_DESKTOP;
+      el.scrollLeft += speed;
       // Reset to start of first copy once we've scrolled through half
       if (el.scrollLeft >= el.scrollWidth / 2) {
         el.scrollLeft = 0;
